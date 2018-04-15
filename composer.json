@@ -1,0 +1,34 @@
+{
+    "name": "ibrand/store-backend",
+    "description": "ibrand store backend base laravel-admin",
+    "type": "library",
+    "keywords": ["laravel", "backend", "grid", "form"],
+    "homepage": "https://github.com/ibrandcc/backend",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shjchen",
+            "email": "ibrand.shjchen@foxmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "iBrand\\Store\\Backend\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "iBrand\\Store\\Backend\\ServiceProvider"
+            ]
+        }
+    }
+}
